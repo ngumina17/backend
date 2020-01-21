@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Eiffel Tower",
+        "favorited": true
+    },
+    {
+        "name": "Notre Dame",
+        "favorited": false
+    },
+    {
+        "name": "Louvre",
+        "favorited": true
+    }
+]
