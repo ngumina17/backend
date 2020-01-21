@@ -14,14 +14,14 @@ router.post("/", (req, res) => {
     // res.json( {newIdea} )
 )})
 
-// router.put("/:id", (req, res) => {
-//     console.log(req.params.id)
-//     let giffy = req.body
-//     let id = req.params.id
-//     Gifs.findOneAndUpdate({ _id: id }, giffy, { new: true })
-//       .then(() => {Gifs.find({}).then(gifs => res.json(gifs))
-//     });
-// })
+router.put("/:id", (req, res) => {
+    console.log(req.params.id)
+    let updateIdea = req.body
+    let id = req.params.id
+    Paris.findOneAndUpdate({ _id: id }, updateIdea, { new: true })
+      .then(() => {Paris.find({}).then(ideas => res.json(ideas))
+    });
+})
 
 // router.delete('/:id', (req, res) => {
 //     Gifs.findOneAndRemove({ _id: req.params.id })

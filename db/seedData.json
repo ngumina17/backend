@@ -1,14 +1,14 @@
 [
     {
-        "name": "Eiffel Tower",
+        "idea": "Eiffel Tower",
         "favorited": true
     },
     {
-        "name": "Notre Dame",
+        "idea": "Notre Dame",
         "favorited": false
     },
     {
-        "name": "Louvre",
+        "idea": "Louvre",
         "favorited": true
     }
 ]
