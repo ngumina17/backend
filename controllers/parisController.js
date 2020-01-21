@@ -23,11 +23,11 @@ router.put("/:id", (req, res) => {
     });
 })
 
-// router.delete('/:id', (req, res) => {
-//     Gifs.findOneAndRemove({ _id: req.params.id })
-//       .then(() => {
-//         res.redirect('/')
-//       })
-//   })
+router.delete("/:id", (req, res) => {
+    let id = req.params.id
+    Paris.findOneAndDelete({ _id: id }).then(() => {
+        Paris.find({}).then(ideas => res.json(ideas))
+    }) 
+})
 
 module.exports = router
