@@ -24,6 +24,7 @@ router.put("/:id", (req, res) => {
 })
 
 router.delete("/:id", (req, res) => {
+    console.log("hit delete", req.params.id)
     let id = req.params.id
     Paris.findOneAndDelete({ _id: id }).then(() => {
         Paris.find({}).then(ideas => res.json(ideas))

@@ -1,7 +1,7 @@
 [
     {
         "idea": "Eiffel Tower",
-        "favorited": true
+        "favorited": false
     },
     {
         "idea": "Notre Dame",
@@ -9,6 +9,6 @@
     },
     {
         "idea": "Louvre",
-        "favorited": true
+        "favorited": false
     }
 ]
