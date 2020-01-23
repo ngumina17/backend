@@ -7,6 +7,10 @@ router.get("/", (req, res) => {
     Paris.find({}).then(ideas => res.json(ideas));
 })
 
+router.get("/:id", (req, res) => {
+    Paris.find({_id: req.params.id}).then(idea => res.json(idea))
+})
+
 router.post("/", (req, res) => {
     let newIdea = req.body;
     // console.log('this is new Gif', newGif);
