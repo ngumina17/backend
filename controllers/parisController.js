@@ -10,7 +10,9 @@ router.get("/", (req, res) => {
 router.post("/", (req, res) => {
     let newIdea = req.body;
     // console.log('this is new Gif', newGif);
+    console.log(newIdea)
     Paris.create(newIdea).then(Paris.find({}).then(ideas => res.json(ideas))
+    //redirect
     // res.json( {newIdea} )
 )})
 
